@@ -1,0 +1,22 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir docs --public-url ./",
+    "prebuild": "shx rm -rf dist/",
+    "publish": "push-dir --dir=dist --branch=gh-pages",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "sass": "^1.22.10",
+    "shx": "^0.3.2"
+  }
+}
