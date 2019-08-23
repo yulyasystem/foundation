@@ -1,2 +1,3 @@
-import './scss/main.scss';
-console.log('Hello main.js!')
+import "../sass/main";
+
+console.log('Hello main.js!');

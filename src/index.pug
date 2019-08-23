@@ -4,6 +4,26 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet")
         title Foundation
     body
-        .main HELLO PARCEL
+        .page
+            header.header 
+                .container 
+                    nav.navigation
+                        .navigation__brand
+                            .logo
+                                .logo__wrapper
+                                    img.logo__icon(src="./img/logo.svg")
+                                .logo__text
+                                    p.text__name.text--bold Bombation
+                                    p.text--regular Startup gambling template
+                        .navigation__menu
+                            a(src="#").text--bold Home
+                            a(src="#") Stories
+                            a(src="#") Library
+                        .navigation-button
+                            button.button--blue
+                                p.button__text--white Get Started
+               
+        script(src="./js/main.js")

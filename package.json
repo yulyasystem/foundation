@@ -2,10 +2,10 @@
   "name": "landing-page",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/js/main.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir docs --public-url ./",
+    "start": "parcel src/index.pug --open",
+    "build": "parcel build src/index.pug -d --out-dir docs --public-url ./",
     "prebuild": "shx rm -rf dist/",
     "publish": "push-dir --dir=dist --branch=gh-pages",
     "build-dev": "parcel build ./src/index.html --no-minify --public-url ./"
@@ -16,6 +16,7 @@
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "cssnano": "^4.1.10",
+    "pug": "^2.0.4",
     "sass": "^1.22.10",
     "shx": "^0.3.2"
   }
